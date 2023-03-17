@@ -1,0 +1,50 @@
+﻿@page "/"
+
+@using Microsoft.AspNetCore.Components.Server.Circuits
+@using ViewModel
+
+@inject CircuitHandler circuitHandler
+@implements IDisposable
+
+
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<p>
+    Number of Session: @((circuitHandler as
+    ViewModel.CircuitHandlerService).Circuits.Count)
+    <ul>
+        @foreach (var circuit in (circuitHandler as
+        ViewModel.CircuitHandlerService).Circuits)
+        {
+            <li>@circuit.Key</li>
+        }
+    </ul>
+</p>
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Subscribe to the event handler
+        (circuitHandler as CircuitHandlerService).CircuitsChanged +=
+             HandleCircuitsChanged;
+
+    }
+
+    public void Dispose()
+    {
+        // Unsubscribe the event handler when the component is disposed
+        (circuitHandler as CircuitHandlerService).CircuitsChanged -=
+          HandleCircuitsChanged;
+
+    }
+
+    public void HandleCircuitsChanged(object sender, EventArgs args)
+    {
+        // notify the component that its state has changed
+        // Important: You must use InvokeAsync
+        InvokeAsync(() => StateHasChanged());
+    }
+}
