@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRBlazor.Shared", "Sig
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{046AC2BC-C682-4C5E-8760-F72478242596}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp2", "BlazorApp2\BlazorApp2.csproj", "{A02F27F5-1095-475B-9383-8C14608CC7F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertAmountToTHB", "ConvertAmountToTHB\ConvertAmountToTHB.csproj", "{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{046AC2BC-C682-4C5E-8760-F72478242596}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{046AC2BC-C682-4C5E-8760-F72478242596}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{046AC2BC-C682-4C5E-8760-F72478242596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02F27F5-1095-475B-9383-8C14608CC7F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02F27F5-1095-475B-9383-8C14608CC7F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02F27F5-1095-475B-9383-8C14608CC7F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02F27F5-1095-475B-9383-8C14608CC7F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
