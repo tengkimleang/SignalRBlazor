@@ -20,6 +20,14 @@
 </div>
 <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
 
+<div class="form-group">
+    <label>
+        User:
+        <input @bind="userInput" />
+    </label>
+</div>
+<button @onclick="Login" disabled="@(!IsConnected)">Send</button>
+
 <hr>
 
 <ul id="messagesList">
@@ -70,6 +78,13 @@ List of User Signal R
             await hubConnection.SendAsync("SendMessage", userInput, messageInput);
         }
     }
+    private async Task Login()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.SendAsync("LoginMessage", userInput);
+        }
+    }
 
     public bool IsConnected =>
         hubConnection?.State == HubConnectionState.Connected;
@@ -80,5 +95,10 @@ List of User Signal R
         {
             await hubConnection.DisposeAsync();
         }
+        hubConnection.On<List<string>>("UpdateUserList", (user) =>
+            {
+                ListUser = user;
+                InvokeAsync(StateHasChanged);
+            });
     }
 }

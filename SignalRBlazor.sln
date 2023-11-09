@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "BlazorApp1\Bl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp2", "BlazorApp2\BlazorApp2.csproj", "{A02F27F5-1095-475B-9383-8C14608CC7F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertAmountToTHB", "ConvertAmountToTHB\ConvertAmountToTHB.csproj", "{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertAmountToTHB", "ConvertAmountToTHB\ConvertAmountToTHB.csproj", "{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickGridWAS", "QuickGridWAS\QuickGridWAS.csproj", "{4BAB7C90-9F3B-4709-8AB9-8EF3C7C1D185}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAPI", "MinimalAPI\MinimalAPI.csproj", "{6D1D9A3D-D061-4651-B4A2-CD28302CA93B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.vbproj", "{A50252DC-6FC5-4D5F-BB93-CF24F074AB98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB7F9FC0-ADE5-4DCD-B337-9F17E6267D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BAB7C90-9F3B-4709-8AB9-8EF3C7C1D185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAB7C90-9F3B-4709-8AB9-8EF3C7C1D185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAB7C90-9F3B-4709-8AB9-8EF3C7C1D185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAB7C90-9F3B-4709-8AB9-8EF3C7C1D185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1D9A3D-D061-4651-B4A2-CD28302CA93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1D9A3D-D061-4651-B4A2-CD28302CA93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1D9A3D-D061-4651-B4A2-CD28302CA93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1D9A3D-D061-4651-B4A2-CD28302CA93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A50252DC-6FC5-4D5F-BB93-CF24F074AB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50252DC-6FC5-4D5F-BB93-CF24F074AB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50252DC-6FC5-4D5F-BB93-CF24F074AB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50252DC-6FC5-4D5F-BB93-CF24F074AB98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

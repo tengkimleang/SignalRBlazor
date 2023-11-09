@@ -16,10 +16,17 @@ namespace SignalRBlazor.Shared.Hubs
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
+        public async Task LoginMessage(string userCode)
+        {
+            UserHandler.ConnectedIds.Add( userCode);
+            await Clients.All.SendAsync("UpdateUserList", UserHandler.ConnectedIds);
+        }
 
-        public override Task OnDisconnectedAsync(Exception exception)
+        public override async Task<Task> OnDisconnectedAsync(Exception exception)
         {
             var a= Context.ConnectionId;
+            UserHandler.ConnectedIds.Remove(Context.ConnectionId);
+            await Clients.All.SendAsync("UpdateUserList", UserHandler.ConnectedIds);
             return base.OnDisconnectedAsync(exception);
         }
         public override async Task<Task> OnConnectedAsync()
